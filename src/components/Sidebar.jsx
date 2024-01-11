@@ -17,7 +17,6 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Switch from "@mui/material/Switch";
 
-
 const listItems = [
   { icon: <Home />, title: "Homepage" },
   { icon: <StickyNote2 />, title: "Pages" },
@@ -53,8 +52,6 @@ export default function Sidebar({ dark, setDark }) {
           </ListItem>
         </List>
       </nav>
-
-      
     </Box>
   );
 }

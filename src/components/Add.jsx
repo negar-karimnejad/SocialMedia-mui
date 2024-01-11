@@ -1,17 +1,24 @@
-import AddIcon from "@mui/icons-material/Add";
-import { Avatar, Tooltip, Typography } from "@mui/material";
-import Box from "@mui/material/Box";
-import Fab from "@mui/material/Fab";
-import Modal from "@mui/material/Modal";
-import { useState } from "react";
-import TextField from "@mui/material/TextField";
-import Stack from "@mui/material/Stack";
 import {
+  DateRange,
   EmojiEmotions,
   Image,
   PersonAdd,
   VideoCameraBack,
 } from "@mui/icons-material";
+import AddIcon from "@mui/icons-material/Add";
+import {
+  Avatar,
+  Button,
+  ButtonGroup,
+  Tooltip,
+  Typography,
+} from "@mui/material";
+import Box from "@mui/material/Box";
+import Fab from "@mui/material/Fab";
+import Modal from "@mui/material/Modal";
+import Stack from "@mui/material/Stack";
+import TextField from "@mui/material/TextField";
+import { useState } from "react";
 
 export default function Add() {
   const [open, setOpen] = useState(false);
@@ -40,12 +47,22 @@ export default function Add() {
         onClose={handleClose}
         sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
       >
-        <Box bgcolor="white" p={3} width={400} height={280} borderRadius={5}>
+        <Box
+          bgcolor={"background.default"}
+          color={"color.primary"}
+          p={3}
+          width={400}
+          height={280}
+          borderRadius={5}
+        >
           <Typography variant="h6" color="gray" textAlign={"center"}>
             Create post
           </Typography>
-          <Box display={"flex"} alignItems={"center"} mb={"20px"} gap="10px">
-            <Avatar src="/static/images/avatar/4.jpg" />
+          <Box display={"flex"} alignItems={"center"} mb={"10px"} gap="10px">
+            <Avatar
+              sx={{ width: "30", height: "30" }}
+              src="/static/images/avatar/4.jpg"
+            />
             <Typography fontWeight={500} variant="span">
               John Doe
             </Typography>
@@ -54,7 +71,7 @@ export default function Add() {
             sx={{ width: "100%" }}
             id="standard-multiline-static"
             multiline
-            rows={3}
+            rows={2}
             placeholder="What's on your mind?"
             variant="standard"
           />
@@ -64,6 +81,12 @@ export default function Add() {
             <VideoCameraBack color="success" />
             <PersonAdd color="error" />
           </Stack>
+          <ButtonGroup fullWidth variant="contained" aria-label="">
+            <Button>Post</Button>
+            <Button sx={{ width: "100px" }}>
+              <DateRange />
+            </Button>
+          </ButtonGroup>
         </Box>
       </Modal>
     </>
