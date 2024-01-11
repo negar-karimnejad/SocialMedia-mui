@@ -16,8 +16,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Switch from "@mui/material/Switch";
-import Fab from "@mui/material/Fab";
-import AddIcon from "@mui/icons-material/Add";
+
 
 const listItems = [
   { icon: <Home />, title: "Homepage" },
@@ -55,11 +54,7 @@ export default function Sidebar({ dark, setDark }) {
         </List>
       </nav>
 
-      <Box sx={{ "& > :not(style)": { ml: 3, mt: 5 } }}>
-        <Fab color="primary" aria-label="add">
-          <AddIcon />
-        </Fab>
-      </Box>
+      
     </Box>
   );
 }

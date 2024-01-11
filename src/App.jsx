@@ -3,6 +3,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { useState } from "react";
 import Home from "./components/Home";
+import Add from "./components/Add";
 
 function App() {
   const [dark, setDark] = useState(false);
@@ -18,6 +19,7 @@ function App() {
       <CssBaseline />
       <Navbar />
       <Home dark={dark} setDark={setDark} />
+      <Add />
     </ThemeProvider>
   );
 }

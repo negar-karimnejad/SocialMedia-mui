@@ -15,7 +15,7 @@ function Rightbar() {
     <Box position={"fixed"}>
       <Box sx={{ paddingRight: 3 }}>
         <Box mb={1}>
-          <Typography variant="h6" color="grey" mb={1}>
+          <Typography variant="h6" color="grey" mb={1} fontWeight={100}>
             Online Friends
           </Typography>
           <AvatarGroup max={4}>
@@ -27,14 +27,10 @@ function Rightbar() {
           </AvatarGroup>
         </Box>
         <Box mb={1}>
-          <Typography variant="h6" color="grey" mb={1}>
+          <Typography variant="h6" color="grey" mb={1} fontWeight={100}>
             Latest Photo
           </Typography>
-          <ImageList
-            sx={{ width: "auto", height: "auto" }}
-            cols={3}
-            rowHeight={130}
-          >
+          <ImageList cols={3} rowHeight={120} gap={5}>
             {itemData.slice(0, 3).map((item) => (
               <ImageListItem key={item.img}>
                 <img
@@ -49,7 +45,7 @@ function Rightbar() {
         </Box>
 
         <Box mb={1}>
-          <Typography variant="h6" color="grey" mb={1}>
+          <Typography variant="h6" color="grey" mb={1} fontWeight={100}>
             Latest Conversations
           </Typography>
           <List

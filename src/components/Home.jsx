@@ -1,7 +1,7 @@
 import Grid from "@mui/material/Grid";
-import Feed from "./components/Feed";
-import Rightbar from "./components/Rightbar";
-import Sidebar from "./components/Sidebar";
+import Feed from "./Feed";
+import Rightbar from "./Rightbar";
+import Sidebar from "./Sidebar";
 
 // eslint-disable-next-line react/prop-types
 export default function Home({ dark, setDark }) {
