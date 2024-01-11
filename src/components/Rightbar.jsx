@@ -1,13 +1,13 @@
 import { Box, Typography } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
+import Divider from "@mui/material/Divider";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import Divider from "@mui/material/Divider";
-import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
+import ListItemText from "@mui/material/ListItemText";
 import React from "react";
 
 function Rightbar() {
@@ -27,7 +27,7 @@ function Rightbar() {
           </AvatarGroup>
         </Box>
         <Box mb={1}>
-          <Typography variant="h6" color="gray" mb={1}>
+          <Typography variant="h6" color="grey" mb={1}>
             Latest Photo
           </Typography>
           <ImageList
